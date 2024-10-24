@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .div{
+        right:30px;
+        border:1px solid red;
+    }
+    div.absoulute{
+        position: absolute;
+        left: 509px;
+        border:1px solid lime;
+    }
+    div.fixed{
+        position: fixed;
+        top:0;
+        left: 445px;
+        width: 100px;
+        border:1px solid rgb(34, 62, 139);
+    }
+    div.relative{
+        position: absolute;
+        left: 59px;
+        border:1px solid rgb(255, 149, 0);
+    }
+    div.sticky{
+        position: sticky;
+        left: 1px;
+        border:1px solid rgb(0, 208, 255);
+    }
+    </style>
+</head>
+<body>
+    <h2>sticky fixed relative absoulute </h2>
+    <div class="sticky">hi</div>
+    <div class="fixed">hi</div>
+    <div class="relative">hi</div>
+    <div class="absoulute">hi</div>
+    <div>hi</div>
+</body>
+</html>
