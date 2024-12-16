@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Numbers and Date</title>
+</head>
+<body>
+    <h2>Random Numbers, Rounded Value, and Current Date</h2>
+    <p>Random Set of Numbers:</p>
+    <div id="randomNumbers"></div>
+    <p>Random Rounded Number:</p>
+    <div id="randomRounded"></div>
+    <p>Today's Date:</p>
+    <div id="currentDate"></div>
+
+    <script>
+        // Generating and displaying a set of random numbers
+        let randomNumbers = "";
+        for (let i = 1; i <= 10; i++) { // Loop for 10 numbers
+            randomNumbers += Math.floor(Math.random() * 100) + "<br>";
+        }
+        document.getElementById("randomNumbers").innerHTML = randomNumbers;
+
+        // Generating and displaying a random rounded number
+        let randomValue = Math.random() * 100;
+        let roundedValue = Math.round(randomValue);
+        document.getElementById("randomRounded").innerText = roundedValue;
+
+        // Displaying the current date
+        let date = new Date();
+        let formattedDate = date.toDateString(); // Display date in a readable format
+        document.getElementById("currentDate").innerText = formattedDate;
+    </script>
+</body>
+</html>
