@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Sum of arguments:</p>
+    <p id="demo"></p>
+    <script>
+        function sumAll() {
+            let sum = 0;
+            for (let i = 0; i < arguments.length; i++) {
+                if (typeof arguments[i] === "number") { // Ensure the argument is a number
+                    sum += arguments[i];
+                }
+            }
+            return sum;
+        }
+
+        // Display the sum result
+        const result = sumAll(1, 123, 50000000000, 2356, 65367476, 47, 7, 6378653838, 5, 8, 6, 4, 8, 5378, 4, 6474, 666, 45);
+        document.getElementById("demo").innerHTML = `The sum is: ${result}`;
+
+        // Display mathematical values
+        const radian45 = Math.PI / 4; // Convert 45 degrees to radians
+        document.write(`sin(45°): ${Math.sin(radian45)}<br>`);
+        document.write(`cos(45°): ${Math.cos(radian45)}<br>`);
+        document.write(`tan(45°): ${Math.tan(radian45)}<br>`);
+
+        // Math.hypot demonstration
+        const hypotenuse = Math.hypot(3, 4); // Example for 3-4-5 triangle
+        document.write(`Hypotenuse of (3, 4): ${hypotenuse}<br>`);
+    </script>
+</body>
+</html>
