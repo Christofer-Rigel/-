@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Info</title>
+    </head>
+    <body>
+        <h3>I don't know, maybe I can undo the burnout</h3>
+        <script>
+            var student = {
+                name: 'Aditya Goswami',
+                age: 10,
+                grade: 5,
+                curriculum: 6,
+                hobbies: 'Study 24 hours, no food, water, sleep',
+                fav_sport: 'All',
+                IQ: 140,
+                academic_burnout: 'Yes, I have a smartness burnout'
+            };
+
+            var color = ["white", "black", "cyan", "magenta", "yellow"];
+            
+            document.write("Student's name is: " + student.name + "<br>");
+            document.write("Student's favorite sport is: " + student.fav_sport + "<br>");
+
+            color.pop();
+            document.write("After popping, the colors are: " + color.join(" * "));
+        </script>
+    </body>
+</html>
