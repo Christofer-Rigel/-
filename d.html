@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>CLASS T1-T5 and class T1-A9 please come</h2>
+<p><!DOCTYPE html></p>
+<p><!DOCTYPE html></p>
+<p id="details"></p>
+<script>
+class Car {
+constructor(brand){
+this.carname = brand
+}
+present( ) {
+return 'I ain.t havin a nuke by me but have a ' + this.carname;
+}
+}
+class Model extends Car {
+    constructor(brand ,mod){
+super(brand);
+this.model = mod;
+    }
+show(){
+return this.present()+  ', it is a ' + this.model;
+}
+}
+let myCar = new Model("BOMLERO","NEOCLEAR");
+document.getElementById("details").innerHTML = myCar.show();
+
+</script>
+</body>
+</html>
