@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Lai dai dai *cough* da da oh no try again</p>
+        <p id="product_value"></p>
+        <button onclick="ascending()">Ascending</button>
+        <button onclick="descending()">Descending</button>
+        <script>
+            var numbers = [5, 32634786, 452, 5, 2, 5, 45, 223434, 5, 2, 5, 2, 3245678237, 23846923, 5345424, 456, 43, 63, 4, 2897529836749295792385];
+            
+            function myfunction(num) {
+                return num * 50;
+            }
+            
+            var newarray = numbers.map(myfunction);
+            document.getElementById("product_value").innerHTML = "The mapped stuff is: " + newarray;
+            
+            function ascending() {
+                newarray.sort(function(a, b){ return a - b; });
+                document.getElementById("product_value").innerHTML = "The ascending order of mapped values are: " + newarray;
+            }
+            
+            function descending() {
+                newarray.sort(function(a, b){ return b - a; });
+                document.getElementById("product_value").innerHTML = "The descending order of mapped values are: " + newarray;
+            }
+        </script>
+    </body>
+</html>
