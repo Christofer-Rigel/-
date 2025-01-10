@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript async / await</h2>
+        <h1 id="result"></h1>
+        <script>
+            async function to_the_power_of(a, b) {
+                let response = a ** b;
+                display(response);
+            }
+            
+            function display(some) {
+                document.getElementById("result").innerHTML = some;
+            }
+            to_the_power_of(99,99)
+        </script>
+    
+    </body>
+</html>
