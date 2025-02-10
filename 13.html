@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <img class="myslido" src="C:\Users\Aditya\Pictures\Screenshots\Screenshot 2025-02-08 152108.png" style="height:500px">
+    <img class="myslido" src="C:\Users\Aditya\Pictures\Screenshots\Screenshot 2025-02-08 152116.png" style="height:500px">
+    <img class="myslido" src="Screenshot 2025-02-10 201715.png" style="height:500px">
+    <img class="myslido" src="Screenshot 2025-02-10 201721.png" style="height:500px">
+    <img class="myslido" src="Screenshot 2025-02-10 201728.png" style="height:500px">
+    <img class="myslido" src="C:\Users\Aditya\Desktop\Logs\Maeath 4.jpeg" style="height:500px">
+    <img class="myslido" src="C:\Users\Aditya\Pictures\Saved Pictures\wp7503139 (1).webp" style="height:500px">
+    <img class="myslido" src="C:\Users\Aditya\Pictures\Saved Pictures\super nova mak.jpg" style="height:500px">
+    
+  </section>
+  <script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("myslido");
+      for (i = 0  ;i < x.length; i++) {
+        x[i].style.display = "none";
+        
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1} 
+      x[myIndex-1].style.display =  "block";
+      setTimeout(carousel, 2000);
+        
+    }
+  </script>
+
+</body>
+</html>
