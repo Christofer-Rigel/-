@@ -1,0 +1,17 @@
+body {
+     background: linear-gradient(90deg, hsla(20, 89%, 89%, 1) 7%, hsla(324, 57%, 77%, 1) 55%, hsla(278, 54%, 81%, 1) 85%); 
+     text-align: center;
+     color: firebrick;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+footer {
+    text-align: bottom;
+    color: black;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button {
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
